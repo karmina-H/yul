@@ -57,7 +57,7 @@ public:
 		this->n = num;
 
 	}
-	Chu(const Chu& ref) :size(ref.size), n(ref.n)
+	explicit Chu(const Chu& ref) :size(ref.size), n(ref.n)
 	{
 		cout << "크기가" << size << "인 츄로스" << n << "개가 나왔습니다~" << endl;
 		bill(size*n*price);
